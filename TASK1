@@ -1,0 +1,27 @@
+
+// Online C++ Compiler - Build, Compile and Run your C++ programs online in your favorite browser
+
+#include<iostream>
+
+using namespace std;
+
+class Car {
+ public :
+ string brand ;
+ string model ;
+ int year ;
+ 
+void displayinfo () {
+    cout << "The "<<model<<" is a car that is came out around year "<< year<< " from a car brand called " << brand << endl;
+    }
+}; 
+
+int main()
+{
+    Car car1 ;
+    car1.brand = "Miata";
+    car1.model = "MX-5";
+    car1.year = 1989 ;
+    car1.displayinfo ();
+    return 0;
+}
