@@ -1,0 +1,25 @@
+
+// Online C++ Compiler - Build, Compile and Run your C++ programs online in your favorite browser
+
+#include<iostream>
+
+using namespace std;
+
+class Car {
+public :
+    string brand ;
+    int speed ;
+    
+    void drive () {
+        cout<<"The car brand named "<<  brand << " is driving at " << speed << " Km/H" << endl;
+    }    
+};
+
+int main()
+{
+    Car car1;
+    car1.brand = "Miata";
+    car1.speed = 120;
+    car1.drive ();
+    return 0;
+}
