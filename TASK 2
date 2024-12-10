@@ -1,0 +1,29 @@
+
+// Online C++ Compiler - Build, Compile and Run your C++ programs online in your favorite browser
+
+#include<iostream>
+
+using namespace std;
+
+class Book {
+ public :
+ string title ;
+ string author ;
+ double price ;
+ int year ;
+ 
+void displayDetails () {
+    cout << "The book called "<< title <<" is a book that is written by "<< author<< " Priced around $" << price << " and published at "<<year<<" Until 2007"<<endl;
+    }
+};
+
+int main()
+{
+    Book book1 ;
+    book1.title = "Harry Potter";
+    book1.author = "J.K. Rowling";
+    book1.year = 1997 ;
+    book1.price = 38.18;
+    book1.displayDetails ();
+    return 0;
+}
